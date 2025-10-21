@@ -25,6 +25,7 @@ services:
       - postgres
     environment:
       POSTGRES_SERVER: postgres
+      BACKEND_CORS_ORIGINS: "http://frontend,http://frontend:5173,https://frontend,https://frontend:5173"
     networks:
       - project-net
     ports:
